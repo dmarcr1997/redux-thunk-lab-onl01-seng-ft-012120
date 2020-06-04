@@ -19,7 +19,7 @@ class App extends Component {
       )
     }
   }
-  
+
   render() {
     console.log(this.props.catPics) // log will fire every time App renders
     return (
