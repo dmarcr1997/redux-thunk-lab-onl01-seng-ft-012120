@@ -9,12 +9,23 @@ class App extends Component {
     this.props.fetchCats()
   }
 
+  isLoaded = () => {
+    if(this.props.loading){
+      return( <div>Loading...</div>)
+    }
+    else{
+      return(
+        <CatList catPics={this.catPics}
+      )
+    }
+  }
+  
   render() {
     console.log(this.props.catPics) // log will fire every time App renders
     return (
       <div className="App">
         <h1>CatBook</h1>
-        {/* missing component */}
+          {this.isLoaded()}
       </div>
     );
   }
