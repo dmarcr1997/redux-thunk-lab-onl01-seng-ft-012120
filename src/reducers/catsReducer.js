@@ -17,5 +17,5 @@ const catsReducer = (state = { cats: [], loading: false }, action) => {
       return state;
   }
 }
- 
+
 export default catsReducer;
