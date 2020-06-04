@@ -15,7 +15,7 @@ class App extends Component {
     }
     else{
       return(
-        <CatList catPics={this.catPics} />
+        <CatList catPics={this.props.catPics} />
       )
     }
   }
